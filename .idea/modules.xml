@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../a_journey_into_math_of_ml-master/04_transformer_tutorial_2nd_part/BERT_tutorial/.idea/BERT.iml" filepath="$PROJECT_DIR$/../a_journey_into_math_of_ml-master/04_transformer_tutorial_2nd_part/BERT_tutorial/.idea/BERT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../a_journey_into_math_of_ml-master/.idea/a_journey_into_math_of_ml-master.iml" filepath="$PROJECT_DIR$/../a_journey_into_math_of_ml-master/.idea/a_journey_into_math_of_ml-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pytorch_study.iml" filepath="$PROJECT_DIR$/.idea/pytorch_study.iml" />
+    </modules>
+  </component>
+</project>
