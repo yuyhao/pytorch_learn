@@ -11,6 +11,8 @@ import torch.optim as optim
 """
 构建网络
 """
+
+
 class FullConnectClassifier(nn.Module):
     def __init__(self):
         super(FullConnectClassifier, self).__init__()
@@ -18,7 +20,7 @@ class FullConnectClassifier(nn.Module):
         self.activate_func = nn.ReLU()
         self.second_layer = nn.Linear(60, 40)
         self.activate_func_2 = nn.ReLU()
-        self.third_layer = nn.Linear(40,10)
+        self.third_layer = nn.Linear(40, 10)
         self.activate_func_3 = nn.Softmax(1)
 
     def forward(self, x):
@@ -71,7 +73,7 @@ if __name__ == '__main__':
 
             outputs = fcc(inputs)
 
-            loss = loss_func(outputs,target)
+            loss = loss_func(outputs, target)
             loss.backward()
 
             optimizer.step()
@@ -79,5 +81,7 @@ if __name__ == '__main__':
             running_loss += loss.item()
 
             if i != 0 and i % 2 == 0:
-                print('epoch:{} | batch:{}| loss:{:.5f}'.format(i, j, running_loss / 2))
+                print(
+                    'epoch:{} | batch:{}| loss:{:.5f}'.format(
+                        i, j, running_loss / 2))
                 running_loss = 0.0
